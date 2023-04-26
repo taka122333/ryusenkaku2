@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* .header1 img {
+    display: inline;
+    width: 75%;
+}
+.header1 {
+    text-align: center;
+    background-color: antiquewhite;
+} */
+
+.loop_wrap {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+
+.loop_wrap img {
+    width: auto;
+    height: 100%;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes loop2 {
+    0% {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.loop_wrap img:first-child {
+    animation: loop 100s -50s linear infinite;
+}
+
+.loop_wrap img:last-child {
+    animation: loop2 100s linear infinite;
+}
+
+
+.tytle_ryusenkaku {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(101, 108, 0);
+
+    font-size:clamp(30px,10vw,200px);
+    color: rgb(255, 255, 255);
+    font-family:serif;
+
+    text-align: center;
+}
+
+.second_image {
+    background-color: rgb(50, 45, 40);
+}
+
+.waiwai {
+    font-size:clamp(30px,10vw,200px);
+    color: darkorange;
+    transform: rotate(-20deg) skew(-20deg);
+}
+.juju {
+    font-size:clamp(30px,8vw,200px);
+    color: rgb(210, 66, 66);
+    transform: translate(0px, -100px) rotate(-20deg) skew(-20deg);
+}
+.oishi {
+    font-size:clamp(30px,10vw,200px);
+    color: rgb(66, 167, 210);
+    transform: rotate(-20deg) skew(-20deg);
+}
+.gohan {
+    font-size:clamp(30px,8vw,200px);
+    color: rgb(233, 229, 11);
+    transform: translate(0px, -100px) rotate(-20deg) skew(-20deg);
+}
+
+.hyo_1 {
+    margin:0px 0px 100px 0px;
+    width: 100%;
+}
+
+.hyo_2 {
+    margin:0px 0px 100px 0px;
+    width: 100%;
+}
+
+.hyo_3 {
+    margin:0px 0px 100px 0px;
+    width: 100%;
+}
+
+.hyo_4 {
+    margin:0px 0px 100px 0px;
+    width: 100%;
+}
+
+.menu_tytle {
+    margin: 0;
+    padding: 2%;
+    background-color: rgb(83, 231, 42);
+
+    font-size:clamp(30px,5vw,200px);
+    text-align: center;
+    color: rgb(7, 53, 15);
+}
+.menu {
+    background-color: rgb(50, 45, 40);
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4 {
+    position: relative;
+}
+.menu1 img,
+.menu2 img,
+.menu3 img,
+.menu4 img {
+    width: 90%;
+    border: solid 10px rgb(27, 24, 199);
+    border-radius: 100px;
+    margin: 20px 0px;
+}
+
+.oniku,
+.teisyoku,
+.sonota {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:clamp(10px,7vw,200px);
+    color: rgb(27, 24, 199);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    margin: 0;
+}
+.sidemenu {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.5);
+    font-size:clamp(10px,3vw,200px);
+    color: rgb(27, 24, 199);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    margin: 0;
+}
+
+.click1,
+.click2,
+.click3,
+.click4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:clamp(20px,4vw,200px);
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu1 img:hover,
+.menu2 img:hover,
+.menu3 img:hover,
+.menu4 img:hover  {
+    opacity:0.5;
+}
+
+.menu1_img:hover .oniku,
+.menu2_img:hover .teisyoku,
+.menu3_img:hover .sidemenu,
+.menu4_img:hover .sonota {
+    opacity: 0;
+}
+.menu1_img:hover .click1,
+.menu2_img:hover .click2,
+.menu3_img:hover .click3,
+.menu4_img:hover .click4 {
+    opacity: 1;
+}
+
+.shosai {
+    margin: 0;
+    padding: 2%;
+    background-color: rgb(83, 231, 42);
+
+    font-size:clamp(30px,5vw,200px);
+    text-align: center;
+    color: rgb(7, 53, 15);
+}
+
+.shosai_text {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 45, 40);
+}
+
+.shosai_ryusenkaku {
+    font-size:clamp(30px,8vw,200px);
+}
+
+.address_tytle {
+    font-size:clamp(30px,5vw,200px);
+}
+.address_detail {
+    font-size:clamp(30px,3vw,200px);
+}
+
+.tel_tytle {
+    font-size:clamp(30px,5vw,200px);
+}
+.tel_detail {
+    margin: 0;
+    padding: 0px 0px 100px 0px;
+    font-size:clamp(30px,3vw,200px);
+}
+
+
+.fooder1 img {
+    display: inline;
+    width: 75%;
+}
+
+.fooder1 {
+    text-align: center;
+    background-color: rgb(50, 45, 40);
+}
+
+#tell {
+    text-align: center;
+    background-color: rgb(50, 45, 40);
+    color: rgb(255, 255, 0);
+    font-size:clamp(30px,5vw,200px);
+}
